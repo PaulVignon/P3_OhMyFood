@@ -1,7 +1,13 @@
-@mixin displayColumnCenter {
+@mixin flexColumnCenter {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@mixin flexColumnStretch {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 @mixin containImage {
@@ -9,58 +15,60 @@
   background-repeat: no-repeat;
 }
 
-@mixin mainShadow {
+@mixin blurShadow {
   box-shadow: 0px 10px 20px #c9c9c9;
 }
 
-$mainColor: #f6f6f6;
-$secondColor: #ffffff;
-$darkerSecondColor: #eaeaea;
-$footerColor: #353535;
+$white_color: #ffffff;
+$lighter_color: #f6f6f6;
+$light_color: #eaeaea;
+$neutral_color: #888;
+$dark_color: #353535;
+$darker_color: #1e1e1e;
+$black_color: #000000;
 $primaryColor: #9356dc;
 $secondaryColor: #ff79da;
 $tertiaryColor: #99e2d0;
 
 body {
-  background-color: $mainColor;
+  background-color: $lighter_color;
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
 
 header {
-  @include displayColumnCenter();
-  @include mainShadow();
-  background-color: $secondColor;
+  @include flexColumnCenter();
+  @include blurShadow();
+  background-color: $white_color;
 }
 
 .darkerSection {
-  @include displayColumnCenter();
-  background-color: $darkerSecondColor;
+  @include flexColumnCenter();
+  background-color: $light_color;
 }
 
 .mainSection {
-  @include displayColumnCenter();
+  @include flexColumnStretch();
   padding: 0 20px 0 20px;
+  .lighter {
+    background-color: $white_color;
+    padding: 0 20px;
+    margin: 0 -20px;
+  }
 }
 
-.secondSection {
-  background-color: $secondColor;
-  width: 106%;
-  padding: 0;
-}
-
-footer {
-  color: $secondColor;
-  background-color: $footerColor;
+.footer {
+  color: $white_color;
+  background-color: $dark_color;
+  padding: 20px;
+  .footerLogo {
+    font-family: "Shrikhand", sans-serif;
+    margin: 0;
+  }
 }
 
 button,
 li,
-.caseRestaurants {
-  @include mainShadow();
-}
-
-body > div.mainSection > div:nth-child(5) > div:nth-child(2) {
-  background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  @include containImage();
+.restaurants {
+  @include blurShadow();
 }

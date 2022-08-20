@@ -1,3 +1,48 @@
+@mixin displayColumnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin mainShadow {
+  box-shadow: 0px 10px 20px #c9c9c9;
+}
+
+$mainColor: #f6f6f6;
+$secondColor: #ffffff;
+$darkerSecondColor: #eaeaea;
+$footerColor: #353535;
+$primaryColor: #9356dc;
+$secondaryColor: #ff79da;
+$tertiaryColor: #99e2d0;
+
 body {
-  background-color: #f6f6f6;
+  background-color: $mainColor;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  @include displayColumnCenter();
+  @include mainShadow();
+  background-color: $secondColor;
+}
+
+.darkerSection {
+  background-color: $darkerSecondColor;
+}
+
+.section {
+  background-color: $secondColor;
+}
+
+footer {
+  color: $secondColor;
+  background-color: $footerColor;
+}
+
+button,
+li,
+.caseRestaurants {
+  @include mainShadow();
 }

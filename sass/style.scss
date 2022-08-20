@@ -4,6 +4,11 @@
   align-items: center;
 }
 
+@mixin containImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @mixin mainShadow {
   box-shadow: 0px 10px 20px #c9c9c9;
 }
@@ -29,11 +34,19 @@ header {
 }
 
 .darkerSection {
+  @include displayColumnCenter();
   background-color: $darkerSecondColor;
 }
 
-.section {
+.mainSection {
+  @include displayColumnCenter();
+  padding: 0 20px 0 20px;
+}
+
+.secondSection {
   background-color: $secondColor;
+  width: 106%;
+  padding: 0;
 }
 
 footer {
@@ -45,4 +58,9 @@ button,
 li,
 .caseRestaurants {
   @include mainShadow();
+}
+
+body > div.mainSection > div:nth-child(5) > div:nth-child(2) {
+  background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  @include containImage();
 }

@@ -1,45 +1,27 @@
-@mixin flexColumnCenter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@mixin flexColumnStretch {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-@mixin containImage {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-@mixin blurShadow {
-  box-shadow: 0px 10px 20px #c9c9c9;
-}
-
-$white_color: #ffffff;
-$lighter_color: #f6f6f6;
-$light_color: #eaeaea;
-$neutral_color: #888;
-$dark_color: #353535;
-$darker_color: #1e1e1e;
-$black_color: #000000;
-$primaryColor: #9356dc;
-$secondaryColor: #ff79da;
-$tertiaryColor: #99e2d0;
+@import "./base/reset";
+@import "./base/typography";
+@import "./components/buttons";
+@import "./components/carousel";
+@import "./components/cover";
+@import "./components/dropdown";
+@import "./layout/footer";
+@import "./layout/forms";
+@import "./layout/grid";
+@import "./layout/header";
+@import "./layout/navigation";
+@import "./layout/sidebar";
+@import "./pages/contact";
+@import "./pages/home";
+@import "./themes/admin";
+@import "./themes/theme";
+@import "./utils/mixins";
+@import "./utils/variables";
+@import "./vendors/bootstrap";
 
 body {
   background-color: $lighter_color;
   margin: 0;
   font-family: "Roboto", sans-serif;
-}
-
-header {
-  @include flexColumnCenter();
-  @include blurShadow();
-  background-color: $white_color;
 }
 
 .darkerSection {
@@ -55,20 +37,4 @@ header {
     padding: 0 20px;
     margin: 0 -20px;
   }
-}
-
-.footer {
-  color: $white_color;
-  background-color: $dark_color;
-  padding: 20px;
-  .footerLogo {
-    font-family: "Shrikhand", sans-serif;
-    margin: 0;
-  }
-}
-
-button,
-li,
-.restaurants {
-  @include blurShadow();
 }

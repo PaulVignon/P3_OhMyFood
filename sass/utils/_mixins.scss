@@ -1,0 +1,20 @@
+@mixin flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flexColumnStretch {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+@mixin containImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin blurShadow {
+  box-shadow: 0px 10px 20px #c9c9c9;
+}

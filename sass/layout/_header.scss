@@ -1,0 +1,5 @@
+header {
+  @include flexColumnCenter();
+  @include blurShadow();
+  background-color: $white_color;
+}

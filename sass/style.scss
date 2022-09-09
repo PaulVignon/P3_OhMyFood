@@ -17,24 +17,3 @@
 @import "./utils/mixins";
 @import "./utils/variables";
 @import "./vendors/bootstrap";
-
-body {
-  background-color: $lighter_color;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-.darkerSection {
-  @include flexColumnCenter();
-  background-color: $light_color;
-}
-
-.mainSection {
-  @include flexColumnStretch();
-  padding: 0 20px 0 20px;
-  .lighter {
-    background-color: $white_color;
-    padding: 0 20px;
-    margin: 0 -20px;
-  }
-}

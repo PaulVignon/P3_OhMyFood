@@ -1,0 +1,18 @@
+{
+  "name": "writting-sass",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulVignon/P3_OhMyFood.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulVignon/P3_OhMyFood/issues"
+  },
+  "homepage": "https://github.com/PaulVignon/P3_OhMyFood#readme"
+}

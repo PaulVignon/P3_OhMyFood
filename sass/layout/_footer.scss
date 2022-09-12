@@ -1,0 +1,17 @@
+.footer {
+  color: $white_color;
+  background-color: $dark_color;
+  @include removeBodyMargin;
+  &__logo {
+    font-family: "Shrikhand", sans-serif;
+    margin: 0;
+  }
+  &--mode-dark {
+    background-color: black;
+  }
+  &--mode-dark &__logo {
+    color: white;
+  }
+  &--mode-light {
+  }
+}

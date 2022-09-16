@@ -1,6 +1,7 @@
 .header {
+  z-index: 99;
+  width: 100%;
   background-color: $white_color;
-  @include removeBodyMargin;
   @include flexColumnCenter();
   @include blurShadow();
   &__title {

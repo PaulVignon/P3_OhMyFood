@@ -1,0 +1,13 @@
+.mainSection {
+  width: 100%;
+  @include flexColumnCenter;
+  &__title {
+    color: black;
+    text-align: center;
+  }
+  &__darker {
+    @include flexColumnCenter;
+    width: 100%;
+    background-color: $light_color;
+  }
+}

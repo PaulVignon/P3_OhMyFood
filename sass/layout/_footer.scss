@@ -1,7 +1,7 @@
 .footer {
+  width: 100%;
   color: $white_color;
   background-color: $dark_color;
-  @include removeBodyMargin;
   &__logo {
     font-family: "Shrikhand", sans-serif;
     margin: 0;

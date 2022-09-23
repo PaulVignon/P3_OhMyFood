@@ -1,11 +1,9 @@
-.header {
-  z-index: 99;
-  width: 100%;
-  background-color: $white_color;
-  @include flexColumnCenter();
-  @include blurShadow();
-  &__title {
-    color: black;
+.footer {
+  color: $white_color;
+  background-color: $dark_color;
+  padding: 20px;
+
+  &__logo {
     font-family: "Shrikhand", sans-serif;
     margin: 0;
   }

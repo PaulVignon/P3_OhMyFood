@@ -14,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/PaulVignon/P3_OhMyFood/issues"
   },
-  "homepage": "https://github.com/PaulVignon/P3_OhMyFood#readme"
+  "homepage": "https://github.com/PaulVignon/P3_OhMyFood#readme",
+  "devDependencies": {
+    "sass": "^1.54.9"
+  }
 }

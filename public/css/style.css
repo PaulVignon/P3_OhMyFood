@@ -2,31 +2,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-.body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-}
-
-.mainSection {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.mainSection__title {
-  color: black;
-  text-align: center;
-}
-.mainSection__darker {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  background-color: #eaeaea;
-}
-
 .button {
   display: flex;
   color: white;

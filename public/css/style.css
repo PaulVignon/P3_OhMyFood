@@ -1,4 +1,4 @@
-.body {
+:root {
   font-family: "Roboto", sans-serif;
 }
 
@@ -64,22 +64,29 @@
 }
 .Section__ul {
   list-style: none;
-  padding: 0 20px;
+  padding: 20px 0;
 }
 .Section__ul__list {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 10px;
   counter-increment: custom;
   background-color: #eaeaea;
   border-radius: 20px;
   margin: 20px 0px;
-  padding: 20px 0;
 }
 .Section__ul__list:before {
-  margin-right: 70px;
+  position: relative;
+  margin-left: -20px;
   padding: 4px 10px;
   border-radius: 20px;
   color: white;
   background-color: #9356dc;
   content: counter(custom) "";
+}
+.Section__ul__list--purple {
+  background-color: #9356dc;
 }
 
 .footer {

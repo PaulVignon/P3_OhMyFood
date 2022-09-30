@@ -41,11 +41,11 @@
 .Section {
   padding-top: 30px;
 }
-.Section__lighter {
-  background-color: #ffffff;
+.Section--lighter {
+  background-color: white;
   padding: 20px;
 }
-.Section__transparent {
+.Section--transparent {
   padding: 20px;
 }
 .Section__darker {
@@ -86,7 +86,7 @@
   content: counter(custom) "";
 }
 .Section__ul__list--purple {
-  background-color: #9356dc;
+  background-color: #f5edff;
 }
 
 .footer {

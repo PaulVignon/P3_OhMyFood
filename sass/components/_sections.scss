@@ -1,10 +1,10 @@
 .Section {
   padding-top: 30px;
-  &__lighter {
-    background-color: $white_color;
+  &--lighter {
+    background-color: white;
     padding: 20px;
   }
-  &__transparent {
+  &--transparent {
     padding: 20px;
   }
   &__darker {
@@ -44,7 +44,7 @@
         content: counter(custom) "";
       }
       &--purple {
-        background-color: #9356dc;
+        background-color: #f5edff;
       }
     }
   }

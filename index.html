@@ -19,10 +19,11 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <script
+      src="https://kit.fontawesome.com/dffa3d305e.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>OhMyFood</title>
   </head>
   <body class="body">
@@ -61,15 +62,20 @@
     <div class="Section">
       <div class="Section Section--transparent">
         <h1 class="Section__title">Restaurants</h1>
-        <div>
+        <figure class="Card">
+          <div class="Card__tag">Nouveau</div>
           <img
+            class="Card__img"
             src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
           />
-          <div>
-            <h4>La palette du goût</h4>
-            <p>Ménilmontant</p>
-          </div>
-        </div>
+          <figcaption class="Card__body">
+            <div class="Card__desc">
+              <h4>la Palette du goût</h4>
+              <p>Ménilmontant</p>
+            </div>
+            <button class="Card__button LikeButton"></button>
+          </figcaption>
+        </figure>
       </div>
     </div>
     <footer class="footer">

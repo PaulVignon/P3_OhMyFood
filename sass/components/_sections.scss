@@ -28,11 +28,12 @@
       display: flex;
       align-items: baseline;
       gap: 10px;
-      padding: 10px;
+      padding: 20px 10px;
       counter-increment: custom;
       background-color: $light_color;
       border-radius: 20px;
       margin: 20px 0px;
+      @include blurShadow;
 
       &:before {
         position: relative;

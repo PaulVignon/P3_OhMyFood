@@ -5,6 +5,8 @@
   border-radius: 1em;
   position: relative;
   @include blurShadow;
+  &__link {
+  }
   &__tag {
     position: absolute;
     top: 5%;
@@ -32,6 +34,7 @@
     flex-direction: column;
     &__title {
       margin: 10px 0;
+      text-decoration: none;
     }
     &__subtitle {
       margin: 0 0 13px 0;
@@ -40,5 +43,6 @@
   &__button {
     background: none;
     border: 0;
+    width: 150px;
   }
 }

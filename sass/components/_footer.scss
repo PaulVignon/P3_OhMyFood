@@ -7,6 +7,10 @@
     font-family: "Shrikhand", sans-serif;
     margin: 0;
   }
+  &__icon {
+    width: 20px;
+    margin-right: 10px;
+  }
   &--mode-dark {
     background-color: black;
   }

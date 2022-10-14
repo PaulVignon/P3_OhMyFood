@@ -29,6 +29,7 @@
     padding: 20px 0;
     &__list {
       display: flex;
+      max-width: 500px;
       align-items: baseline;
       gap: 10px;
       padding: 20px 10px;

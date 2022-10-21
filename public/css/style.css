@@ -5,6 +5,7 @@
 .button {
   display: flex;
   color: white;
+  margin: auto;
   background: linear-gradient(#ff79da, #9356dc);
   padding: 15px;
   border: 0px;
@@ -18,8 +19,9 @@
 
 .Card {
   width: 100%;
+  margin: auto;
+  margin-top: 25px;
   max-width: 600px;
-  margin: 20px 0;
   background-color: white;
   border-radius: 1em;
   position: relative;
@@ -71,6 +73,9 @@
 .likebutton__icon {
   font-size: 30px;
 }
+.likebutton__icon--page {
+  padding-right: 20px;
+}
 .likebutton__icon:hover {
   font-weight: 900;
   color: #ff79da;
@@ -115,8 +120,63 @@
 }
 .Section__darker {
   background-color: #eaeaea;
-  text-align: center;
   padding: 0 0 1px 0;
+}
+.Section__darker--page {
+  padding: 20px;
+}
+.Section__darker__text {
+  text-align: center;
+}
+.Section__darker__title {
+  font-weight: 100;
+  text-decoration: underline #99e2d0;
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 7px;
+}
+.Section__darker__list {
+  padding: 0;
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+}
+.Section__darker__list__case {
+  list-style: none;
+  margin-bottom: 25px;
+}
+.Section__darker__list__case__desc {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+.Section__darker__list__case__desc__text {
+  display: flex;
+  flex-direction: column;
+}
+.Section__darker__list__case__validation {
+  background-color: #99e2d0;
+  display: flex;
+  align-items: center;
+  width: 80px;
+  justify-content: center;
+}
+.Section__darker__list__case__validation__button {
+  background: none;
+  border: none;
+  color: #ffffff;
+}
+.Section__darker__list__case__validation__button .fa-circle-check {
+  font-size: x-large;
+}
+.Section__darker__list__case__link {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
 }
 .Section__title {
   margin: 0;
@@ -137,6 +197,8 @@
 .Section__ul__list {
   display: flex;
   max-width: 500px;
+  margin: auto !important;
+  margin-bottom: 25px !important;
   align-items: baseline;
   gap: 10px;
   padding: 20px 10px;
@@ -198,9 +260,10 @@
   border-radius: 50px 50px 0 0;
 }
 .banner__desc__title {
-  color: black;
+  color: rgb(0, 0, 0);
   font-family: "Shrikhand", sans-serif;
   letter-spacing: 2px;
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,10 @@
   &__icon {
     font-size: 30px;
 
+    &--page {
+      padding-right: 20px;
+    }
+
     &:hover {
       font-weight: 900;
       color: $secondaryColor;

@@ -1,0 +1,51 @@
+.container {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(44, 44, 44, 0.135) 0px 0px 10px;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  transition: 1s;
+  overflow: hidden;
+  &__text {
+    flex-grow: 1;
+    padding-left: 30px;
+  }
+  &__price {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+  &__check {
+    width: 0;
+    overflow: hidden;
+
+    background-color: rgb(192, 255, 234);
+    transition: 0.5s;
+  }
+  &__blob {
+    width: 100px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+
+    justify-content: center;
+  }
+  &__icon {
+    color: white;
+    transition: 0.8s ease;
+    transition-delay: 0.5s;
+    font-size: 35px;
+  }
+
+  &:hover &__check,
+  &.is--active &__check {
+    width: 100px;
+  }
+  &:hover &__icon,
+  &.is--active &__icon {
+    transition-delay: 0s;
+    transform: rotate(360deg);
+  }
+}

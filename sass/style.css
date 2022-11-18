@@ -69,21 +69,79 @@
   border: 0;
 }
 
+.container {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(44, 44, 44, 0.135) 0px 0px 10px;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  transition: 1s;
+  overflow: hidden;
+}
+.container__text {
+  flex-grow: 1;
+  padding-left: 30px;
+}
+.container__price {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+.container__check {
+  width: 0;
+  overflow: hidden;
+  background-color: rgb(192, 255, 234);
+  transition: 0.5s;
+}
+.container__blob {
+  width: 100px;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.container__icon {
+  color: white;
+  transition: 0.8s ease;
+  transition-delay: 0.5s;
+  font-size: 35px;
+}
+.container:hover .container__check, .container.is--active .container__check {
+  width: 100px;
+}
+.container:hover .container__icon, .container.is--active .container__icon {
+  transition-delay: 0s;
+  transform: rotate(360deg);
+}
+
 .likebutton {
-  background: none;
   border: 0;
+  position: relative;
 }
 .likebutton__icon {
   font-size: 30px;
+  color: black;
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 0.2s ease;
 }
 .likebutton__icon--page {
   padding-right: 20px;
 }
-.likebutton__icon:hover {
+.likebutton:hover .likebutton__icon {
+  color: transparent;
+  transform: scale(1);
+}
+.likebutton__iconBorder {
+  position: absolute;
+}
+.likebutton__iconFull {
   font-weight: 900;
-  color: #ff79da;
-  -webkit-background-clip: text;
-          background-clip: text;
+  transform: scale(0);
+  transform-origin: bottom;
 }
 
 .body {

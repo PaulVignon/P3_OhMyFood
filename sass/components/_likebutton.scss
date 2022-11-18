@@ -1,17 +1,28 @@
 .likebutton {
-  background: none;
   border: 0;
+  position: relative;
   &__icon {
     font-size: 30px;
+    color: black;
+    background: linear-gradient($primaryColor, $secondaryColor);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: 0.2s ease;
 
     &--page {
       padding-right: 20px;
     }
-
-    &:hover {
-      font-weight: 900;
-      color: $secondaryColor;
-      background-clip: text;
-    }
+  }
+  &:hover &__icon {
+    color: transparent;
+    transform: scale(1);
+  }
+  &__iconBorder {
+    position: absolute;
+  }
+  &__iconFull {
+    font-weight: 900;
+    transform: scale(0);
+    transform-origin: bottom;
   }
 }

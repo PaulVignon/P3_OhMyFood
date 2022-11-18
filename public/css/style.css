@@ -114,19 +114,31 @@
 }
 
 .likebutton {
-  background: none;
   border: 0;
+  position: relative;
 }
 .likebutton__icon {
   font-size: 30px;
+  color: black;
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 0.2s ease;
 }
 .likebutton__icon--page {
   padding-right: 20px;
 }
-.likebutton__icon:hover {
+.likebutton:hover .likebutton__icon {
+  color: transparent;
+  transform: scale(1);
+}
+.likebutton__iconBorder {
+  position: absolute;
+}
+.likebutton__iconFull {
   font-weight: 900;
-  color: #ff79da;
-  background-clip: text;
+  transform: scale(0);
+  transform-origin: bottom;
 }
 
 .body {

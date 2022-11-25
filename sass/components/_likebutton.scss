@@ -1,6 +1,7 @@
 .likebutton {
   border: 0;
   position: relative;
+  background-color: transparent;
   &__icon {
     font-size: 30px;
     color: black;
@@ -21,7 +22,7 @@
     position: absolute;
   }
   &__iconFull {
-    font-weight: 900;
+    font-weight: 500;
     transform: scale(0);
     transform-origin: bottom;
   }

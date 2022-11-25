@@ -5,11 +5,7 @@
   background-color: $white_color;
   @include flexColumnCenter();
   @include blurShadow();
-  &__title {
-    color: black;
-    font-family: "Shrikhand", sans-serif;
-    margin: 0;
-  }
+
   &--mode-dark {
     background-color: black;
   }

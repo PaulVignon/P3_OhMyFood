@@ -358,11 +358,18 @@
   animation-fill-mode: both;
   animation-iteration-count: 1;
 }
-.fadein__spinLogo {
+
+.spinLogo {
   margin-top: 40px;
   width: 80px;
   height: 80px;
   animation: spin 0.7s infinite ease-in;
+}
+.spinLogo__1layer {
+  fill: #ff79da;
+}
+.spinLogo__2layer {
+  fill: #f6f6f6;
 }
 
 @keyframes fade {

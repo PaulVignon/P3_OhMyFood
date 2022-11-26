@@ -16,11 +16,17 @@
   animation-direction: reverse;
   animation-fill-mode: both;
   animation-iteration-count: 1;
-  &__spinLogo {
-    margin-top: 40px;
-    width: 80px;
-    height: 80px;
-    animation: spin 0.7s infinite ease-in;
+}
+.spinLogo {
+  margin-top: 40px;
+  width: 80px;
+  height: 80px;
+  animation: spin 0.7s infinite ease-in;
+  &__1layer {
+    fill: $secondaryColor;
+  }
+  &__2layer {
+    fill: $lighter_color;
   }
 }
 @keyframes fade {

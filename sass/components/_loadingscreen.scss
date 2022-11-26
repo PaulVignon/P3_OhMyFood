@@ -16,6 +16,12 @@
   animation-direction: reverse;
   animation-fill-mode: both;
   animation-iteration-count: 1;
+  &__spinLogo {
+    margin-top: 40px;
+    width: 80px;
+    height: 80px;
+    animation: spin 0.7s infinite ease-in;
+  }
 }
 @keyframes fade {
   0% {
@@ -23,5 +29,13 @@
   }
   100% {
     opacity: 100%;
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
   }
 }

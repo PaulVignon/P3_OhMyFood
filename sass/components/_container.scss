@@ -11,6 +11,9 @@
     flex-grow: 1;
     padding-left: 30px;
   }
+  &__desc {
+    text-overflow: ellipsis;
+  }
   &__price {
     display: flex;
     align-items: flex-end;

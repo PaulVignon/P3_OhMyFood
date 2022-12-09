@@ -13,7 +13,7 @@
 .logo--animation {
   color: #313131;
   font-size: 45px;
-  -webkit-animation: colorchange 2.5s infinite alternate ease;
+  -webkit-animation: colorchange 1.5s infinite alternate ease;
 }
 @-webkit-keyframes colorchange {
   0% {
@@ -362,7 +362,7 @@
   height: 100%;
   background-color: white;
   animation-name: fade;
-  animation-delay: 5s;
+  animation-delay: 3s;
   animation-duration: 0.3s;
   animation-direction: reverse;
   animation-fill-mode: both;

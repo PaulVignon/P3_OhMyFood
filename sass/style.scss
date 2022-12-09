@@ -1,7 +1,7 @@
 @import "./utils/mixins";
 @import "./utils/variables";
 @import "./base/typography";
-@import "./components/base";
+
 @import "./components/logo";
 @import "./components/buttons";
 @import "./components/link";
@@ -10,15 +10,13 @@
 @import "./components/likebutton";
 @import "./components/body";
 @import "./components/header";
-@import "./components/navigation";
+
 @import "./components/sections";
 @import "./components/footer";
 @import "./components/banner";
 @import "./components/loadingscreen";
 @import "./components/fadeout";
-@import "./layout/forms";
-@import "./pages/contact";
-@import "./pages/home";
+
 @import "./themes/admin";
 @import "./themes/theme";
 @import "./vendors/bootstrap";

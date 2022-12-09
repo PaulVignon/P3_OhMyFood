@@ -415,6 +415,9 @@
 .fadeout--3 {
   animation-delay: 0.7s;
 }
+.fadeout--4 {
+  animation-delay: 0.9s;
+}
 
 @keyframes fadeout {
   from {

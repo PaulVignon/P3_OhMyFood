@@ -11,7 +11,6 @@
   color: #ffffff;
 }
 .logo--animation {
-  color: #313131;
   font-size: 45px;
   -webkit-animation: colorchange 1.5s infinite alternate ease;
 }
@@ -25,6 +24,7 @@
 }
 
 .button {
+  font-family: "Roboto";
   display: flex;
   color: white;
   margin: auto;
@@ -203,12 +203,14 @@
 }
 
 .header {
+  position: relative;
   padding: 10px 0px 10px 0px;
-  z-index: 99;
+  z-index: 5;
   width: 100%;
   background-color: #ffffff;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   box-shadow: 0px 10px 15px #c9c9c9;
 }
@@ -218,6 +220,11 @@
 .header--mode-dark .header__logo {
   color: white;
 }
+.header .fa-arrow-left {
+  margin-left: 30px;
+  scale: 1.8;
+}
+
 .Section {
   padding-top: 30px;
 }
@@ -231,6 +238,13 @@
 .Section__darker {
   background-color: #eaeaea;
   padding: 0 0 1px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.Section__darker .fa-location-dot {
+  margin-right: 15px;
 }
 .Section__darker--page {
   padding: 20px;
@@ -309,6 +323,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: 0px 35px 0px 35px;
 }
 .Section__icon--colorized {
   color: #9356dc;
@@ -403,6 +418,7 @@
   animation-direction: reverse;
   animation-fill-mode: both;
   animation-iteration-count: 1;
+  z-index: 99;
 }
 
 .spinLogo {

@@ -1,9 +1,13 @@
 .header {
+  position: relative;
   padding: 10px 0px 10px 0px;
-  z-index: 99;
+  z-index: 5;
   width: 100%;
   background-color: $white_color;
-  @include flexColumnCenter();
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   @include blurShadow();
 
   &--mode-dark {
@@ -12,6 +16,8 @@
   &--mode-dark &__logo {
     color: white;
   }
-  &--mode-light {
+  .fa-arrow-left {
+    margin-left: 30px;
+    scale: 1.8;
   }
 }

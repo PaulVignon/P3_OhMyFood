@@ -223,6 +223,7 @@
 .header .fa-arrow-left {
   margin-left: 30px;
   scale: 1.8;
+  color: #000000;
 }
 
 .Section {
@@ -248,6 +249,7 @@
 }
 .Section__darker--page {
   padding: 20px;
+  flex-direction: column;
 }
 .Section__darker__text {
   text-align: center;

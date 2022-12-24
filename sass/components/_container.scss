@@ -30,7 +30,7 @@
   &__check {
     width: 0;
     overflow: hidden;
-    background-color: rgb(192, 255, 234);
+    background-color: lighten($color: $tertiaryColor, $amount: 15%);
     transition: 0.5s;
   }
   &__blob {
@@ -72,5 +72,5 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: calc(100%); /* change this */
+  width: calc(100%);
 }

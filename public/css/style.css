@@ -57,7 +57,7 @@
   top: 5%;
   right: 3%;
   border-radius: 0.1em;
-  color: #018766;
+  color: #278870;
   background-color: #99e2d0;
   width: fit-content;
   padding: 6px 14px;
@@ -127,7 +127,7 @@
 .container__check {
   width: 0;
   overflow: hidden;
-  background-color: rgb(192, 255, 234);
+  background-color: #d5f3eb;
   transition: 0.5s;
 }
 .container__blob {
@@ -165,7 +165,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 100%; /* change this */
+  width: 100%;
 }
 
 .likebutton {
@@ -240,13 +240,13 @@
 }
 .Section__darker__title {
   font-weight: 100;
-  text-decoration: none; /* add this */
+  text-decoration: none;
   text-decoration-thickness: 0.1em;
   text-underline-offset: 7px;
   margin-bottom: 50px !important;
   width: 90%;
   max-width: 700px;
-  position: relative; /* add this */
+  position: relative;
 }
 .Section__darker__title::before {
   content: "";
@@ -256,7 +256,7 @@
   right: 0;
   height: 0.1em;
   background-color: #99e2d0;
-  width: calc(12% - 0.1em); /* change this */
+  width: calc(12% - 0.1em);
 }
 .Section__darker__list {
   padding: 0;

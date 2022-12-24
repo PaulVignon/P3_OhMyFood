@@ -18,19 +18,31 @@
     }
     &__title {
       font-weight: 100;
-      text-decoration: underline #99e2d0;
+      text-decoration: none; /* add this */
       text-decoration-thickness: 0.1em;
       text-underline-offset: 7px;
       margin-bottom: 50px !important;
       width: 90%;
       max-width: 700px;
-      margin: auto;
+      position: relative; /* add this */
     }
+
+    &__title::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 0.1em;
+      background-color: #99e2d0;
+      width: calc(12% - 0.1em); /* change this */
+    }
+
     &__list {
       padding: 0;
-      width: 90%;
+      width: 100%;
       max-width: 700px;
-      margin: auto;
+
       &__case {
         list-style: none;
         margin-bottom: 25px;

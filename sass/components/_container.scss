@@ -10,9 +10,16 @@
   &__text {
     flex-grow: 1;
     padding-left: 30px;
+    width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   &__desc {
+    color: $black_color;
     text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   &__price {
     display: flex;
@@ -23,7 +30,6 @@
   &__check {
     width: 0;
     overflow: hidden;
-
     background-color: rgb(192, 255, 234);
     transition: 0.5s;
   }
@@ -51,4 +57,20 @@
     transition-delay: 0s;
     transform: rotate(360deg);
   }
+}
+.container__title,
+.container__desc {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.container:hover .container__title,
+.container:hover .container__desc,
+.container.is--active .container__title,
+.container.is--active .container__desc {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: calc(100%); /* change this */
 }

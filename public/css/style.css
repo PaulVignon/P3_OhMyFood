@@ -38,6 +38,9 @@
 .link {
   text-decoration: none !important;
 }
+.link--white {
+  color: white;
+}
 
 .Card {
   width: 100%;
@@ -104,9 +107,16 @@
 .container__text {
   flex-grow: 1;
   padding-left: 30px;
+  width: 80%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .container__desc {
+  color: #000000;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .container__price {
   display: flex;
@@ -139,6 +149,23 @@
 .container:hover .container__icon, .container.is--active .container__icon {
   transition-delay: 0s;
   transform: rotate(360deg);
+}
+
+.container__title,
+.container__desc {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.container:hover .container__title,
+.container:hover .container__desc,
+.container.is--active .container__title,
+.container.is--active .container__desc {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%; /* change this */
 }
 
 .likebutton {
@@ -213,19 +240,28 @@
 }
 .Section__darker__title {
   font-weight: 100;
-  text-decoration: underline #99e2d0;
+  text-decoration: none; /* add this */
   text-decoration-thickness: 0.1em;
   text-underline-offset: 7px;
   margin-bottom: 50px !important;
   width: 90%;
   max-width: 700px;
-  margin: auto;
+  position: relative; /* add this */
+}
+.Section__darker__title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.1em;
+  background-color: #99e2d0;
+  width: calc(12% - 0.1em); /* change this */
 }
 .Section__darker__list {
   padding: 0;
-  width: 90%;
+  width: 100%;
   max-width: 700px;
-  margin: auto;
 }
 .Section__darker__list__case {
   list-style: none;

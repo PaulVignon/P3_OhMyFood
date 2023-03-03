@@ -7,9 +7,9 @@
   }
   &--animation {
     font-size: 45px;
-    -webkit-animation: colorchange 1.5s infinite alternate ease;
+    animation: colorchange 1.5s infinite alternate ease;
   }
-  @-webkit-keyframes colorchange {
+  @keyframes colorchange {
     0% {
       color: $primaryColor;
     }

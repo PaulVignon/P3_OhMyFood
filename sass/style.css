@@ -258,7 +258,7 @@
   border: none;
   color: #ffffff;
 }
-.Section__darker__list__case__validation__button .fa-circle-check {
+.Section__darker__list__case__validation__button .fa-circle-check circleCheck {
   font-size: x-large;
 }
 .Section__darker__list__case__link {

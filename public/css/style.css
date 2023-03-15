@@ -240,6 +240,17 @@
 .Section--transparent {
   padding: 20px;
 }
+.Section__darkest {
+  background-color: #eaeaea;
+  padding: 0 0 1px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.Section__darkest .locationIcon {
+  margin-right: 15px;
+}
 .Section__darker {
   background-color: #f6f6f6;
   padding: 0 0 1px 0;
@@ -404,6 +415,7 @@
   font-family: "Shrikhand", sans-serif;
   letter-spacing: 2px;
   padding-left: 20px;
+  font-size: 1.3em;
 }
 
 .fadein {

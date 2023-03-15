@@ -7,6 +7,17 @@
   &--transparent {
     padding: 20px;
   }
+  &__darkest {
+    background-color: $light_color;
+    padding: 0 0 1px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .locationIcon {
+      margin-right: 15px;
+    }
+  }
   &__darker {
     background-color: $lighter_color;
     padding: 0 0 1px 0;

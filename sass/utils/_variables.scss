@@ -6,5 +6,7 @@ $dark_color: #353535;
 $darker_color: #1e1e1e;
 $black_color: #000000;
 $primaryColor: #9356dc;
+$primaryColorLighten: lighten($primaryColor, $amount: 5%);
 $secondaryColor: #ff79da;
+$secondaryColorLighten: lighten($secondaryColor, $amount: 5%);
 $tertiaryColor: #99e2d0;

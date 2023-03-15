@@ -30,11 +30,10 @@
   &__check {
     width: 0;
     overflow: hidden;
-    background-color: lighten($color: $tertiaryColor, $amount: 15%);
+    background-color: $tertiaryColor;
     transition: 0.5s;
   }
   &__blob {
-    width: 100px;
     height: 100%;
     align-items: center;
     display: flex;

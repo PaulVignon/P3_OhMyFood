@@ -8,4 +8,10 @@
   border: 0px;
   border-radius: 100px;
   @include blurShadow();
+  transition: 0.5s;
+
+  &:hover {
+    background: linear-gradient($secondaryColorLighten, $primaryColorLighten);
+    @include blurStrongShadow();
+  }
 }
